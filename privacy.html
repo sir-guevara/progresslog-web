@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — ProgressLog</title>
+<meta name="description" content="ProgressLog stores all data in your iCloud private database. No servers, no analytics, no third parties." />
+<meta name="theme-color" content="#735BEF" />
+
+<style>
+  :root {
+    --bg: #f7f7f9;
+    --surface: #ffffff;
+    --surface-soft: #f0eefe;
+    --text: #121217;
+    --text-secondary: #5a5a64;
+    --text-tertiary: #989aa3;
+    --accent: #735BEF;
+    --stroke: rgba(0,0,0,0.07);
+    --radius: 18px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  header { padding: 28px 0; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 17px; color: var(--text); text-decoration: none; }
+  .brand-dot { width: 22px; height: 22px; border-radius: 7px; background: var(--accent); display: inline-block; }
+
+  main { padding: 20px 0 60px; }
+  h1 { font-size: 36px; font-weight: 700; letter-spacing: -0.01em; margin: 8px 0 6px; }
+  .meta { color: var(--text-tertiary); font-size: 14px; margin-bottom: 36px; }
+  h2 { font-size: 21px; font-weight: 600; margin: 36px 0 10px; letter-spacing: -0.005em; }
+  p, li { color: var(--text); font-size: 16px; }
+  p, ul { margin: 0 0 14px; }
+  ul { padding-left: 22px; }
+  ul li { margin-bottom: 6px; }
+  .callout {
+    background: var(--surface-soft);
+    border-radius: var(--radius);
+    padding: 18px 22px;
+    margin: 24px 0;
+    color: var(--text);
+  }
+  a { color: var(--accent); }
+  footer {
+    padding: 30px 0;
+    color: var(--text-tertiary);
+    font-size: 13px;
+    border-top: 1px solid var(--stroke);
+    margin-top: 50px;
+  }
+  footer a { color: var(--text-secondary); text-decoration: none; margin-right: 18px; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a class="brand" href="/">
+      <span class="brand-dot"></span>
+      ProgressLog
+    </a>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated <span id="today"></span>.</p>
+
+  <div class="callout">
+    <strong>The short version.</strong> ProgressLog has no servers and no analytics. Everything you log lives in your personal iCloud private database. We never see it, never collect it, and never share it with anyone.
+  </div>
+
+  <h2>1. What ProgressLog stores</h2>
+  <p>When you use the app, the following data is created and stored on your device and in your iCloud private database:</p>
+  <ul>
+    <li>Your profile (name, email if you provide it, age, sex, height, weight goals, units preference)</li>
+    <li>Your workout templates, scheduled days, logged sets, reps, and weights</li>
+    <li>Your cardio sessions (duration, incline, pace, calories)</li>
+    <li>Your weigh-ins and body measurements (body fat %, waist, chest, arms, thighs)</li>
+    <li>Your meal logs (calories and protein)</li>
+    <li>Progress photos you choose to add</li>
+    <li>Badges you've earned</li>
+    <li>Your preferences (notification times, reminder toggles, app icon choice)</li>
+    <li>The Sign in with Apple identifier (if you sign in) — used only to recognize you on your devices</li>
+  </ul>
+
+  <h2>2. Where it lives</h2>
+  <p>All of the above is stored:</p>
+  <ul>
+    <li>Locally on your device using Apple's SwiftData framework</li>
+    <li>Synced to your personal iCloud private database via Apple's CloudKit framework</li>
+  </ul>
+  <p>This is the same private space Apple uses for things like your Reminders and Notes. It is end-to-end protected by Apple — we have no access to it.</p>
+
+  <h2>3. What ProgressLog does <em>not</em> do</h2>
+  <ul>
+    <li>We do not operate any servers</li>
+    <li>We do not collect analytics or telemetry</li>
+    <li>We do not use third-party advertising or tracking SDKs</li>
+    <li>We do not sell, rent, or share your data with anyone</li>
+    <li>We do not associate your data with a marketing profile</li>
+    <li>We do not see your Health data, workouts, weight, photos, or meals</li>
+  </ul>
+
+  <h2>4. Apple Health</h2>
+  <p>If you grant Apple Health permission, ProgressLog will read your weight, active and basal energy, steps, and workout history from HealthKit, and write your weigh-ins and finished workouts back. This exchange happens locally on your device and never crosses any network we control. You can revoke access at any time in iOS Settings → Privacy &amp; Security → Health → ProgressLog.</p>
+
+  <h2>5. In-app purchases</h2>
+  <p>ProgressLog offers an optional $7.99 one-time "Supporter" purchase. The purchase is handled by Apple's StoreKit; we receive only the entitlement status (purchased or not) — never your payment details, name, or address.</p>
+
+  <h2>6. Notifications</h2>
+  <p>If you enable reminders, ProgressLog schedules local notifications on your device (weigh-in reminders, workout-day reminders). These are entirely local. ProgressLog does not send remote push notifications.</p>
+
+  <h2>7. Children</h2>
+  <p>ProgressLog is not directed at children under 13. We do not knowingly collect any data from children.</p>
+
+  <h2>8. Deleting your data</h2>
+  <p>You can delete your account and every piece of data ProgressLog has stored — on this device and from your iCloud — at any time:</p>
+  <ul>
+    <li>Open the app → More → <strong>Delete account &amp; all data</strong></li>
+  </ul>
+  <p>This action is immediate and permanent.</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>If we ever change anything material about how data is handled, we'll update this page and bump the date at the top. There are no servers, so substantive changes are rare.</p>
+
+  <h2>10. Contact</h2>
+  <p>Questions about privacy? Email <a href="mailto:support@progresslog.org">support@progresslog.org</a> and we'll get back to you.</p>
+</main>
+
+<footer>
+  <div class="container">
+    <a href="/">Home</a>
+    <a href="/terms.html">Terms</a>
+    <a href="mailto:support@progresslog.org">Contact</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('today').textContent = new Date().toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+</script>
+
+</body>
+</html>
