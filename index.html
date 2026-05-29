@@ -126,6 +126,42 @@
   }
   .principles-grid p { margin: 0; font-size: 14px; color: var(--text); line-height: 1.45; }
 
+  /* Screenshot showcase — horizontal scroll of phone frames */
+  .shots {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 8px 24px 24px;
+    margin: 0 -24px;            /* bleed past the container padding */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .shots::-webkit-scrollbar { height: 0; }
+  .shot {
+    flex: 0 0 auto;
+    width: 232px;
+    scroll-snap-align: center;
+  }
+  .shot img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 28px;
+    border: 1px solid var(--stroke);
+    box-shadow: 0 18px 50px -18px rgba(45, 35, 95, 0.35);
+    background: var(--surface);
+  }
+  .shot .caption {
+    margin-top: 14px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-secondary);
+  }
+  @media (min-width: 760px) {
+    .shots { justify-content: center; flex-wrap: nowrap; }
+  }
+
   footer {
     padding: 50px 0 40px;
     color: var(--text-tertiary);
@@ -197,6 +233,35 @@
         <h3>Photos &amp; measurements</h3>
         <p>Private progress photos with side-by-side comparison. Body fat, waist, chest, arms, thighs — charts over time.</p>
       </div>
+    </div>
+  </section>
+
+  <section id="screens" class="section">
+    <div class="container">
+      <h2>See it in motion.</h2>
+      <p class="lead">Animated exercise guides, a focused logging flow, and progress you can actually read at a glance.</p>
+    </div>
+    <div class="shots">
+      <figure class="shot">
+        <img src="/screenshots/01-workout-session.png" alt="Lower Body workout session with animated exercise guides" loading="lazy" width="232" onerror="this.closest('.shot').style.display='none'" />
+        <figcaption class="caption">Animated guides for every move</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="/screenshots/02-workout-plan.png" alt="Weekly workout plan with training days and rest days" loading="lazy" width="232" onerror="this.closest('.shot').style.display='none'" />
+        <figcaption class="caption">Plan your whole week</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="/screenshots/03-nutrition.png" alt="Nutrition tracking with calories and protein" loading="lazy" width="232" onerror="this.closest('.shot').style.display='none'" />
+        <figcaption class="caption">Calories &amp; protein, sized to your goal</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="/screenshots/04-progress.png" alt="Progress charts for weight and strength" loading="lazy" width="232" onerror="this.closest('.shot').style.display='none'" />
+        <figcaption class="caption">Watch weight fall, strength climb</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="/screenshots/05-streaks.png" alt="Streaks and badges for consistency" loading="lazy" width="232" onerror="this.closest('.shot').style.display='none'" />
+        <figcaption class="caption">Quiet milestones, no spam</figcaption>
+      </figure>
     </div>
   </section>
 
